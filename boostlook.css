@@ -501,8 +501,6 @@ html.toc-hidden .boostlook:not(:has(.doc)) {
 }
 
 /* Navigation Menu */
-
-
 .boostlook .nav-panel-menu {
   overflow: visible;
 }
@@ -550,17 +548,37 @@ html.toc-hidden .boostlook:not(:has(.doc)) {
   top: 38%;
   width: 16px;
   height: 16px;
-  margin-left: -1rem;
+  margin-left: -1.25rem;
   background-image: var(--bl-caret-svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px;
 }
 
+/* Breadcrumbs */
+.boostlook .breadcrumbs {
+  display: block;
+}
+
+.boostlook .breadcrumbs ul li:first-of-type {
+  display: flex;
+}
+
 /* Code Block */
 .boostlook .doc .content pre code {
   background-color: var(--bl-code-background);
   border-color: var(--bl-code-border-color);
+}
+
+/* Layout */
+.boostlook .article .content {
+  gap: 1rem;
+}
+
+/* Table of Contents */
+.boostlook .toc .toc-menu a {
+  border-left: 0;
+  padding: .25rem 0 0 0;
 }
 
 /*----------------- Styles specific to Antora Templates end -----------------*/
